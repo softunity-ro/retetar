@@ -1,0 +1,105 @@
+.slideShow {
+    position: relative;
+}
+
+.slide {
+    padding: 15px;
+    /*background-color: #fcf6ec;*/
+    background-image: linear-gradient(180deg, #198754, #305846);
+    border-radius: 15px;
+    display: none;
+    /*box-shadow: 7px 7px rgba(128, 128, 59, 0.5);*/
+    margin: 10px;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-title {
+    min-height: 50px;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.slide-desc {
+    font-size: 1.4em;
+}
+
+.slide-img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 350px;
+    height: 350px;
+    border-radius: 40px;
+}
+
+.active-slide .anim-img {
+    position: relative;
+    animation-name: rotateSlideImg, titleHighlight;
+    animation-duration: 1s;
+}
+
+.slide-btn {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    height: 100%;
+    width: 10%;
+    display: none;
+    font-size: 2em;
+}
+
+.slideShow:hover .slide-btn {
+    display: block;
+}
+
+.slide-previous-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-next-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.slide-navigation-btn {
+    max-width: 75px;
+    margin: 5px;
+    border: none;
+    border-radius: 0 10px;
+    width: initial;
+}
+
+    .slide-navigation-btn:hover {
+        background-color: #beb39f;
+        color: #000000;
+    }
+
+.active-slide-navigation-btn {
+    background-color: #0c63e4;
+    color: #ffffff;
+}
+
+@keyframes rotateSlideImg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes titleHighlight {
+    10% {
+        font-size: 2em;
+    }
+
+    100% {
+        font-size: 2em;
+    }
+}

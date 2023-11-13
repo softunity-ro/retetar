@@ -29,6 +29,7 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+[Oo]ut/
 [Ll]og/
 [Ll]ogs/
 
@@ -396,4 +397,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# JetBrains configuration directory
+.idea/
+/RetetarWebForms/App_Data/Retetar_log.ldf
+/RetetarWebForms/App_Data/Retetar.mdf
 /RetetarWebForms/Secret.config
+/RetetarWebForms/img/**

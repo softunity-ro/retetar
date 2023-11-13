@@ -1,0 +1,14 @@
+﻿.selected-image {
+    border: solid 16px #008000;
+}
+
+#imageBrowserPanel, .imageBrowserPanel {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: auto;
+}

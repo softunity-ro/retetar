@@ -1,0 +1,69 @@
+﻿@import url("imageBrowser.css");
+@import url("recipe.css");
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 282px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777777;
+    border-color: #ffffff;
+}
+
+.nav-item, .dropdown-item {
+    font-size: 1.4em;    
+    border-bottom: #ffffff solid 5px;
+    color: #22480e;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-link {
+    color: #22480e;
+}
+
+.nav-item:hover {
+    border-bottom: #008000 solid 5px;
+    border-radius: 15px;
+    font-weight: 500;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item:hover {
+    color: #ffffff;
+    border-bottom: #fce191 solid 5px;
+    border-radius: 15px;
+    font-weight: 500;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo-header {
+    max-height: 100px;
+}
+
+.table-autosize {
+    width: auto !important;
+}

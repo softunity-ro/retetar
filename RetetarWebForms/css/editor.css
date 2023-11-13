@@ -1,0 +1,16 @@
+﻿.ql-container {
+    height: auto;
+}
+
+.ql-editor {
+    min-height: 200px;
+    font-size: initial !important;
+    line-height: revert-layer !important;
+    margin: initial !important;
+    padding: initial !important;
+    
+}
+
+input, select, textarea {
+    max-width: initial;
+}
